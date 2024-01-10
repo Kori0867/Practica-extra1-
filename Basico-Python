@@ -1,0 +1,136 @@
+------------------------------------------------------------------------------
+VARIABLES
+variable ="hola mundo"
+numero = 80
+decimal = 10.5
+verdadero = True
+falso = False
+------------------------------------------------------------------------------
+STRINGS
+
+texto = "hola mundo"
+print (texto.upper())
+print (texto.lower())
+print (texto.find("m"))
+nuevotexto = texto.replace("mun", "tid41")
+print (nuevotexto)
+
+print("Mundo" in texto)
+print("mundo" in texto)
+------------------------------------------------------------------------------
+ARITMETICA
+
+print (5+15)
+print (15-5)
+print (5*15)
+print (5/15)
+print (3**5) #potencia 
+print (10**3) #numero
+------------------------------------------------------------------------------
+COMPARACION
+
+n1= 59
+n2= 84
+
+print (n1 > n2) # mayor que
+print (n1 < n2) # menor que 
+print (n1 <= n2)  #menor igual que 
+print (n1 >= n2)  #mayor igual que 
+print (n1 == n2) #igual
+print (n1 != n2) #distinto de 
+------------------------------------------------------------------------------
+INPUT
+resultado = input ("ingresa tu edad")
+print (type(resultado))
+print (resultado + 19)
+------------------------------------------------------------------------------
+RESULTADO
+resultado = input ("ingresa tu edad")
+print (type(resultado) == 19)
+numero = int (resultado)
+str(19)
+------------------------------------------------------------------------------
+OPERADORES LOGICOS
+
+edad = 22
+print (edad > 18 and edad <30)
+print (edad > 18 or edad>30)
+print (not (edad >17))
+------------------------------------------------------------------------------
+CICLO IF
+
+puntaje = 28
+
+if puntaje >=95:
+    print ("esta aprobado con honores")
+elif puntaje >= 50:
+    print ("el alumno paso")
+else : print ("reprobado")
+
+print ("fuera del if")
+------------------------------------------------------------------------------
+CONVERSOR
+
+temperatura = float (input("ingrese la temperatura"))
+escala = input ("es Fahrenheit (F) o celsius (C)?").lower()
+
+if escala == "f":
+    celsius = (temperatura  - 32) *5/9
+    print (celsius)
+elif escala == "c":
+    Farhrenheit = temperatura *1.8 + 32
+    print (Farhrenheit)
+else:
+    print("escala incorrecta")
+------------------------------------------------------------------------------
+LISTAS
+
+lenguajes = ["phython", "ruby", "php", "javascript","java"]
+print (lenguajes [1])
+lenguajes [1] = "go"
+
+print (lenguajes [-3])  # cuando es con menos empieza de final al inicio
+print (lenguajes [1:3]) # del uno al 2 por que el 3 lo saca
+print (lenguajes [:3])    #  siempre exluye el ultimo numero que coloques y el numero que pongas de arranque si lo agarra.
+print (lenguajes [1:]) 
+------------------------------------------------------------------------------
+LISTAS-METODOS
+
+lenguajes = ["phython", "ruby", "php", "javascript","java"] #0, 1, 2, 3, 4, 5.
+lenguajes.insert(3,"go")  #insertas y recorres la posicion del que este en esa.
+lenguajes.insert(0,"C")
+lenguajes.remove(0,"ruby")  # remover la posicion 
+
+print ("php" in lenguajes)
+
+print (len (lenguajes)) # nos arroja un conteo de cuantos elementos hay
+------------------------------------------------------------------------------
+CICLO FOR
+
+lenguajes = ["phython", "ruby", "php", "javascript","java"] #0, 1, 2, 3, 4, 5.
+
+i = 1
+for i in 5:
+    print(i)
+    i = i + 1
+    
+i = 1
+for i in 5:
+    print (i * "el mishi")
+    i = i + 1
+    
+i= 0
+for i in len(lenguajes):
+    print(lenguajes[i])
+    i = i + 1
+    
+
+
+
+
+
+
+
+
+
+
